@@ -6,63 +6,71 @@ $myroot: $root_prod;
 
 $myblack: #262626;
 
-.site-logo .site-desktop-title {
-  font-family: "Bitter";
-  font-size: 2.6rem;
-  font-weight: 700;
-  line-height: 1;
-  margin-top: -6px;
+.page-wide {
+  max-width: 85rem;
+  margin: 0 auto;
 }
 
-.site-logo a { color: $white; }
-.site-logo a:hover { color: $primary-color; }
+// top-bar/titlebar if we even use it
 
-.site-desktop-tag {
-  font-family: "Bitter";
-  font-size: 1.2rem;
-}
-
-// top-bar desktop title and link
-.site-desktop-title a {
-  font-family: "Bitter";
-  font-weight: 700;
-}
-
-.top-bar .top-bar-title a {
-  font-size: 2.2rem;
-  color: $white;
-}
-
-// top-bar mobile title and link
-.site-mobile-title {
-  font-family: "Bitter";
-}
-
-.title-bar-title a {
-  font-size: 1.5rem;
-  color: $white;
-}
-
-.top-bar-title {
-  margin: 0 1rem 0 0;
-}
-
-// mysidebar
-.mysidebar {
-  color: $white;
+.top-bar {
   background-color: $myblack;
-  min-width: 285px;
-  border-right: 1px solid $light-gray;
-  border-bottom: 1px solid $light-gray;
-}
-
-.mysidebar h3 {
-  //color: $primary-color;
-  font-size: 1.3rem;
 }
 
 .title-bar {
   background: $myblack;
+}
+
+// header
+.my-header-wrap {
+  background: linear-gradient(180deg, transparent, transparent 28%, #0e20f4 28%, #0e20f4 72%, transparent 72%);
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: "Passion One";
+  color: $myblack;
+  //letter-spacing: 1px;
+}
+
+.my-header {
+
+  .menu {
+    font-family: "Passion One";
+    font-size: 1.5rem;
+    //font-weight: bold;
+    //letter-spacing: 1px;
+  }
+
+  .menu a {
+    color: $white;
+  }
+  .menu li:hover {
+    //color: $primary-color;
+    background-color: $medium-gray;
+  }
+  .menu li:hover a {
+    //color: $primary-color;
+  }
+  .menu .is-active > a {
+    background-color: $dark-gray;
+  }
+
+}
+
+.my-logo {
+  max-width: 195px;
+  height: auto;
+}
+
+// body/middle
+
+// sidebar
+.my-sidebar {
+  min-width: 285px;
+
+  .menu {
+    font-weight: bold;
+  }
 }
 
 .mobile-off-canvas-menu {
@@ -74,54 +82,54 @@ $myblack: #262626;
   //font-weight: bold;
 }
 .menu a {
-  color: $white;
+  //color: $white;
 }
 .menu li:hover {
-  color: $primary-color;
-  background-color: $medium-gray;
+  //color: $primary-color;
+  //background-color: $medium-gray;
 }
 .menu li:hover a {
-  color: $primary-color;
+  //color: $primary-color;
 }
 .menu .is-active > a {
-  background-color: $dark-gray;
+  //background-color: $dark-gray;
 }
 //.mysidebar .menu li:last-child {
 //  border-bottom: 1px solid #e6e6e6;
 //}
 
 .mysidebar input, select {
-  border: 1px solid $myblack;
+  //border: 1px solid $myblack;
   //background-color: $light-gray;
 }
 
 .mysidebar #searchform .button {
-  color: $myblack;
-  background-color: $light-gray;
-  border: 1px solid $myblack;
-  border-left: 0;
+  //color: $myblack;
+  //background-color: $light-gray;
+  //border: 1px solid $myblack;
+  //border-left: 0;
 }
 
 .mysidebar #searchform .button:hover {
-  color: $primary-color;
-  background-color: $light-gray;
+  //color: $primary-color;
+  //background-color: $light-gray;
 }
 
 .mobile-off-canvas-menu input, select {
-  border: 1px solid $myblack;
+  //border: 1px solid $myblack;
   //background-color: $light-gray;
 }
 
 .mobile-off-canvas-menu #searchform .button {
-  color: $myblack;
-  background-color: $light-gray;
-  border: 1px solid $myblack;
-  border-left: 0;
+  //color: $myblack;
+  //background-color: $light-gray;
+  //border: 1px solid $myblack;
+  //border-left: 0;
 }
 
 .mobile-off-canvas-menu #searchform .button:hover {
-  color: $primary-color;
-  background-color: $light-gray;
+  //color: $primary-color;
+  //background-color: $light-gray;
 }
 
 // cards
@@ -132,17 +140,19 @@ $myblack: #262626;
 }
 
 .card-header a {
-  color: $myblack;
+  //color: $myblack;
 }
 
 .card-header .entry-title {
   font-size: 14px;
-  font-weight: bold;
+  font-family: "Passion One";
+  //font-weight: bold;
   //line-height: 1.5;
   margin-bottom: 0;
 }
 
 .card-header .entry-meta {
+  font-family: $body-font-family;
   font-size: 12px;
   font-weight: normal;
   font-style: normal;
@@ -156,33 +166,33 @@ $myblack: #262626;
 //}
 
 /////// GridBlock card a:hover highlight
-.my-main-container .card a {
+.my-block-grid .card a {
   color: $myblack;
 }
 
-.my-main-container .card:hover a {
+.my-block-grid .card:hover a {
   color: $dark-gray;
 }
 
-.my-main-container .card:hover .card-header {
+.my-block-grid .card:hover .card-header {
   color: $primary-color;
 }
 
-.my-main-container a:hover img, .my-main-container a:focus img {
+.my-block-grid a:hover img, .my-block-grid a:focus img {
   opacity: 0.7;
 }
 
-.my-main-container a img {
+.my-block-grid a img {
   -webkit-backface-visibility: hidden;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
-.my-main-container .card .post-edit-link {
+.my-block-grid .card .post-edit-link {
   color: $primary-color;
 }
 
-.my-main-container .card:hover .post-edit-link {
+.my-block-grid .card:hover .post-edit-link {
   color: $primary-color;
 }
 

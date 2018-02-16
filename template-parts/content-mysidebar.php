@@ -9,22 +9,7 @@
 
 ?>
 
-<aside class="cell small-2 sidebar mysidebar hide-for-small-only pt+ pl pr">
-
-	<div class="site-logo text-center mb">
-		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-			<div class="site-desktop-title">
-				<?php bloginfo( 'name' ); ?>
-			</div>
-			<div class="site-desktop-tag">
-				<?php bloginfo('description'); ?>
-			</div>
-		</a>
-	</div>
-
-	<div class="image-circle mb">
-		<img class="image-circle-crop" src="http://helgedom.com/images/trio_20171031_sm.jpg">
-	</div>
+<aside class="cell small-2 sidebar my-sidebar hide-for-small-only pl pr">
 
 	<!--		<div class="row text-center">-->
 	<!--			<h4>Documenting family shenanigans since 2001.</h4>-->
@@ -37,9 +22,9 @@
 	<!--			<i class="fa fa-fw fa-2x fa-flickr" aria-hidden="true"></i>-->
 	<!--		</div>-->
 
-	<ul class="vertical menu mb">
-		<?php wp_list_pages( array( 'title_li' => '' ) ); ?>
-	</ul>
+<!--	<ul class="vertical menu mb">-->
+<!--		--><?php //wp_list_pages( array( 'title_li' => '' ) ); ?>
+<!--	</ul>-->
 
 	<?php get_search_form(); ?>
 
@@ -50,10 +35,10 @@
 		) ); ?>
 	</ul>
 
-	<h3>PROJECTS</h3>
-	<ul class="vertical menu mb">
-		<?php wp_list_bookmarks('title_li=&categorize=0&category_name=Projects'); ?>
-	</ul>
+<!--	<h3>PROJECTS</h3>-->
+<!--	<ul class="vertical menu mb">-->
+<!--		--><?php //wp_list_bookmarks('title_li=&categorize=0&category_name=Projects'); ?>
+<!--	</ul>-->
 
 <!--	<select name="archive-dropdown" onChange='document.location.href=this.options[this.selectedIndex].value;'>-->
 <!--		<option value="">--><?php //echo attribute_escape(__('Select Year')); ?><!--</option>-->

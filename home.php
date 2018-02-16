@@ -15,28 +15,27 @@
 
 get_header(); ?>
 
-<div class="my-main-grid grid-x">
+<div class="my-body page-wide grid-x">
 
-	<?php get_template_part( 'template-parts/content', 'mysidebar' ); ?>
+	<main class="cell auto">
 
-	<main class="my-main-container cell auto p+">
-	<?php if ( have_posts() ) : ?>
+		<?php if ( have_posts() ) : ?>
 
-		<div class="grid-x grid-padding-x small-up-1 medium-up-2 large-up-3">
+			<div class="my-block-grid grid-x grid-padding-x small-up-1 medium-up-2">
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+				<?php /* Start the Loop */ ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-				<div class="cell">
-					<?php
+					<div class="cell">
+						<?php
 						//get_template_part( 'template-parts/content', get_post_format() );
 						get_template_part( 'template-parts/content', 'gridblock' );
-					?>
-				</div>
+						?>
+					</div>
 
-			<?php endwhile; ?>
+				<?php endwhile; ?>
 
-		</div>
+			</div>
 
 		<?php else : ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
@@ -48,7 +47,7 @@ get_header(); ?>
 		if ( function_exists( 'foundationpress_pagination' ) ) :
 			foundationpress_pagination();
 		elseif ( is_paged() ) :
-		?>
+			?>
 			<nav id="post-nav">
 				<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
 				<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
@@ -57,7 +56,9 @@ get_header(); ?>
 
 	</main>
 
-	<?php get_sidebar(); ?>
+	<?php get_template_part( 'template-parts/content', 'mysidebar' ); ?>
+
+	<!--	--><?php //get_sidebar(); ?>
 
 </div>
 

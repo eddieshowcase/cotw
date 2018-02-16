@@ -81,7 +81,7 @@
 @import "templates/front";
 @import "templates/kitchen-sink";
 
-// HELGEDOM...
+// COTW...
 // This file orders components using a convention called ITCSS (Inverted Triangle CSS)
 // Essentially grouping styling by specificity (starting from broad to specific)
 
@@ -113,18 +113,16 @@
 // 7. Trumps (overrides, helpers, utilities, only affect one piece of the DOM at a time,
 // usually carries !important-type items)
 /* ------------------------------------------- */
-@import "helgedom/utils.vars";
-@import "helgedom/utils.spacing";
-@import "helgedom/utils.borders";
-//@import "helgedom/utils.misc";
+@import "cotw/utils.vars";
+@import "cotw/utils.spacing";
+@import "cotw/utils.borders";
+//@import "cotw/utils.misc";
 
-// HELGEDOM styles
-@import "helgedom/helgedom";
+// COTW styles
+@import "cotw/cotw";
+
 // Google Fonts
-//@import url(http://fonts.googleapis.com/css?family=Libre+Franklin:400italic,700italic,400,700,800|Robot|Roboto+Slab|Open+Sans:400italic,700italic,400,700);
-@import url('https://fonts.googleapis.com/css?family=Bitter:400,700');
-//@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700i');
-//@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,700i');
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,700i');
-
+@import url('https://fonts.googleapis.com/css?family=Passion+One');
+@import url('https://fonts.googleapis.com/css?family=Robot+Condensed');
+//@import url('https://fonts.googleapis.com/css?family=Francois+One');?
 @import 'font-awesome';

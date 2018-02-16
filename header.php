@@ -36,7 +36,7 @@
 		</div>
 
 <!--		DESKTOP-->
-		<nav class="site-navigation top-bar hide" role="navigation">
+		<nav class="site-navigation top-bar" role="navigation">
 			<div class="top-bar-left">
 				<div class="site-desktop-title top-bar-title">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
@@ -50,5 +50,20 @@
 				<?php endif; ?>
 			</div>
 		</nav>
+
+		<div class="my-header-wrap grid-x">
+			<div class="cell">
+				<div class="my-header grid-x align-center-middle p">
+					<div class="cell shrink">
+						<img class="my-logo" src="images/cotw_logo_myblack_2-18.svg">
+					</div>
+					<div class="cell shrink">
+						<ul class="menu">
+							<?php wp_list_pages( array( 'title_li' => '' ) ); ?>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 
 	</header>

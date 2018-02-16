@@ -13,11 +13,8 @@
 get_header(); ?>
 
 <!--<div class="main-container">-->
-	<div class="my-main-grid grid-x">
-
-		<?php get_template_part( 'template-parts/content', 'mysidebar' ); ?>
-
-		<main class="my-main-container cell auto p+">
+	<div class="my-main-grid page-wide grid-x">
+		<main class="my-main-container cell auto">
 			<?php get_template_part( 'template-parts/featured-image' ); ?>
 			<?php
 			while ( have_posts() ) :
@@ -27,7 +24,8 @@ get_header(); ?>
 				<?php comments_template(); ?>
 			<?php endwhile; ?>
 		</main>
-		<?php get_sidebar(); ?>
+<!--		--><?php //get_template_part( 'template-parts/content', 'mysidebar' ); ?>
+<!--		--><?php //get_sidebar(); ?>
 	</div>
 <!--</div>-->
 <?php
