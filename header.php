@@ -55,7 +55,7 @@
 			<div class="cell">
 				<div class="my-header grid-x align-center-middle p">
 					<div class="cell shrink">
-						<img class="my-logo" src="images/cotw_logo_myblack_2-18.svg">
+						<img class="my-logo" src="http://creatureofthewheel.com/images/cotw_logo_myblack_2-18.svg">
 					</div>
 					<div class="cell shrink">
 						<ul class="menu">
