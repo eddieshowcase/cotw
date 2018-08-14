@@ -1,3 +1,7 @@
+# COTW
+
+This is the code base repository for my COTW website project, which is based on FoundationPress 6.x. The original README for FoundationPress is as follows...
+
 # FoundationPress
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/olefredrik/foundationpress?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
